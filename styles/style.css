@@ -1,0 +1,59 @@
+/* Header */
+header h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Bio */
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 30%;
+}
+
+.bio img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.bio p {
+    font-size: 18px;
+}
+
+/* Skills */
+
+.skills p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0, 50%);
+}
