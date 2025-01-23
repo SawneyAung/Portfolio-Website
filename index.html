@@ -7,46 +7,169 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- Remixicons // Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
     <title>Sawney</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>
-            Hi, I'm Sawney<br>
-            A Frontend Developer Wannabe <br>
-            Based in Thailand <br>
-        </h1>
-    </header>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">Sawney</span>
+                <button onclick=toggleSidebar() id="toggle-btn" class="toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z"/></svg>
+                </button>
+            </li>
+            <li class="active">
+                <a href="#home">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills">
+                    <i class="ri-pencil-ruler-2-line"></i> 
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#qualification">
+                    <i class="ri-book-open-line"></i> 
+                    <span>Qualification</span>
+                </a>
+            </li>
+            <li>
+                <a href="#services">
+                    <i class="ri-briefcase-line"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <i class="ri-stack-line"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="ri-message-3-line"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Main -->
-    <Main>
-        <!-- Bio -->
-        <Section class="bio">
-            <img src="assets/profile.jpg" alt="profile image">
-            <p>
-                Hi, I'm Sawney, A student of Rangsit International College. <br>
-                Passionate about programming, designing and developing websites.
-            </p>
-        </Section>
+    <main>
+        <section class="sec__container slider-wrapper">
+                <!-- Home -->
+                <div class="home section" id="home">
+                    <div class="grid home__container sec__container section__border">
+                        <!-- Home Info 1-->
+                        <div class="home__info">
+                            <div>
+                                <h3 class="home__info-title">
+                                    BIOGRAPHY
+                                </h3>
+                                <p class="home__info-description">
+                                    Currently majoring in Digital Innovation Technology
+                                    of Rangsit International College.
+                                    Currently Based in Thailand
+                                </p>
+                            </div>
+    
+                            <div>
+                                <h3 class="home__info-title">
+                                    CONTACT
+                                </h3>
+                                <p class="home__info-description">
+                                    Pathum Thani, Thailand <br>
+                                    saw.a66@rsu.ac.th <br>
+                                    +66 824450605 <br>
+                                </p>
+                            </div>
+    
+                            <div>
+                                <h3 class="home__info-title">
+                                    SERVICES
+                                </h3>
+                                <p class="home__info-description">
+                                    - <br>
+                                </p>
+                            </div>
+                        </div>
 
-        <!-- Skills -->
-        <section class="skills">
-            <p>These are my skills:</p>
-            <ul>
-                <li>HTML - Intermediate</li>
-                <li>CSS - Intermediate</li>
-                <li>JavaScript - Intermediate</li>
-            </ul>
+                        <!-- Home Data -->
+                        <div class="home__data grid">
+                            <h1 class="home__title">
+                                Hi, I'm Sawney <br>
+                            </h1>
+    
+                            <div class="home__blob grid">
+                                <div class="home__perfil">
+                                    <img src="assets/perfil.png" alt="home perfil">
+                                </div>
+                            </div>
+    
+                            <ul class="home__social">
+                                <a href="https://www.instagram.com/yenwass/" target="_blank" class="home__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://github.com/SawneyAung" target="_blank" class="home__social-link">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                                <a href="https://open.spotify.com/user/34aduq7oy5iamgne4s2jsc3ar?si=9688df207bdb4e84" target="_blank" class="home__social-link">
+                                    <i class="ri-spotify-line"></i>
+                                </a>
+                            </ul>
+                        </div>
+    
+                        
+                        
+                        <!-- Home Info 2 -->
+                        <div class="home__info">
+                            <div>
+                                <h3 class="home__info-title">
+                                    YEARS OF EXPRIENCE
+                                </h3>
+                                <p class="home__info-number">
+                                    2
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="home__info-title">
+                                    COMPLETED PROJECTS
+                                </h3>
+                                <p class="home__info-number">
+                                    2
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="home__info-title">
+                                    COMPANIES WORKED
+                                </h3>
+                                <p class="home__info-number">
+                                    0
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+
+                <!-- Qualification -->
+
+                <!-- Services -->
+
+                <!-- Projects -->
+
+                <!-- Contact -->
         </section>
-    </Main>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-        <section class="contact">
-            <span class="footer">Copyright Sawney. All right reserved</span>
-        </section>
-    </footer>
-
+    <!-- Script -->
+    <script src="scripts/main.js"></script>
 </body>
 </html>
