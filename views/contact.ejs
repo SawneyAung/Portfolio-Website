@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saw Aung Kaung Thant</title>
+
+    <!-- Title Icon -->
+    <link rel="shortcut icon" href="/assets/brr_logo.png">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header"> 
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Sawney
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">
+                            <i class="ri-home-5-line"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/projects" class="nav__link">
+                            <i class="ri-stack-line"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact" class="nav__link  active-link">
+                            <i class="ri-message-3-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>  
+
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-2-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+    <!-- Contact -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-1-line"></i>Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">sawdaichi@gmail.com</span>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Line</span>
+                            <span class="contact__data-info">@yenwass</span>
+
+                            <a href="https://line.me/ti/p/350wtOMrhR" target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <span class="contact__data-info">+95 9 799 288004</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=959799288004&text=Hello!, more information!" target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i>Write me your project
+                    </h3>
+
+                    <form action="/submit-form" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Names</label>
+                            <input type="text" name="user_name" required placeholder="Write your names" class="contact__form-input" id="contact-name">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" name="user_name" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea name="user_project" placeholder="Write your project" id="contact-project" class="contact__form-input"></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- scroll reveal -->
+    <script src="/script/scrollreveal.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="/script/swiper-bundle.min.js"></script>
+
+    <!-- email js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- main js -->
+    <script src="/script/script.js"></script>
+</html>
